@@ -2,7 +2,7 @@ from flask import Flask, jsonify, render_template
 
 app = Flask(__name__, static_folder="static", template_folder="templates")
 
-FLAG = "byteme{t1m3_st0n3s_t4ke_y0u_b4ck}"
+FLAG = "owasp{t1m3_st0n3s_t4ke_y0u_b4ck}"
 
 @app.route('/')
 def home():
@@ -29,4 +29,5 @@ def api_v1():
 
 if __name__ == '__main__':
     app.run(debug=True)
+
 
